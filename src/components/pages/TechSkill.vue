@@ -10,9 +10,9 @@
       flat
     >
       <v-card-title class="text-title
-                            text-h4 text-center
-                            text-xl-h4 text-lg-h4
-                            text-md-h4 text-sm-h4 text-xs-h3">
+                           text-h4 text-center
+                           text-xl-h4 text-lg-h4
+                           text-md-h4 text-sm-h4 text-xs-h3">
         <span class="font-weight-medium">Technical skills</span>
       </v-card-title>
       <v-divider></v-divider>
@@ -63,7 +63,7 @@
                   >
                     <span>{{ item.name }}</span>
                   </v-col>
-                  <v-col class="text-center text-xl-left text-lg-left text-md-left">
+                  <v-col class="text-center">
                     <v-rating
                       v-model="item.rating"
                       class="ma-2"
@@ -83,8 +83,7 @@
 </template>
 
 <script>
-  export 
-  default {
+  export default {
     name: 'TechSkill',
 
     data: () => ({
