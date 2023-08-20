@@ -10,9 +10,9 @@
       flat
     >
       <v-card-title class="text-title
-                            text-h4 text-center
-                            text-xl-h4 text-lg-h4
-                            text-md-h4 text-sm-h4 text-xs-h3">
+                           text-h4 text-center
+                           text-xl-h4 text-lg-h4
+                           text-md-h4 text-sm-h4 text-xs-h3">
         <span class="font-weight-medium">Soft skills</span>
       </v-card-title>
       <v-divider></v-divider>
@@ -49,6 +49,7 @@
                   v-for="item in tech.items"
                   :key="item.name"
                   class="text-h6 font-weight-bold"
+                  justify="center"
                   no-gutters
                 >
                   <v-col
@@ -63,7 +64,7 @@
                   >
                     <span>{{ item.name }}</span>
                   </v-col>
-                  <v-col class="text-center text-xl-left text-lg-left text-md-left">
+                  <v-col class="text-center">
                     <v-rating
                       v-model="item.rating"
                       class="ma-2"
